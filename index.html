@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!--Шапка сайта-->
+    <header class="header">
+      <!--Логотип с ссылкой-->
+
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="logo link"
+            >Web<span class="logo-text">Studio</span></a
+          >
+          <ul class="nav-links list">
+            <li class="nav-item item">
+              <a href="./index.html" class="nav-link link">Studio</a>
+            </li>
+            <li class="nav-item item">
+              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+            </li>
+            <li class="nav-item item">
+              <a href="" class="nav-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Контакты для связи-->
+
+        <address class="contact">
+          <ul class="contact-list list">
+            <li class="contact-item item">
+              <a href="mailto:info@devstudio.com" class="contact-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item item">
+              <a href="tel:+110001111111" class="contact-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!--Главный заголовок,герой-->
+
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="hero-button">Order Service</button>
+        </div>
+      </section>
+
+      <!--Особенности-->
+      <section class="section">
+        <div class="container">
+          <h2 hidden class="hidden-title">features</h2>
+
+          <ul class="features-list list">
+            <li class="features-item">
+              <h3 class="features-title">Strategy</h3>
+              <p class="features-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Punctuality</h3>
+              <p class="features-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Diligence</h3>
+              <p class="features-text features-text-item">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-title">Technologies</h3>
+              <p class="features-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Чем мы занимаемся-->
+
+      <section class="section section-padding">
+        <div class="container">
+          
+          <h2 class="section-caption">What are we doing</h2>
+          <ul class="meny-list list">
+            <li class="meny-item">
+              <img
+                src="./images/wawd1.jpg"
+                alt="Computer with screen on"
+                width="360"
+              />
+            </li>
+            <li class="meny-item">
+              <img
+                src="./images/wawd2.jpg"
+                alt="Phone on the screen of which SMS"
+                width="360"
+              />
+            </li>
+            <li class="meny-item">
+              <img
+                src="./images/wawd3.jpg"
+                alt="Laptop with phone in hand"
+                width="360"
+              />
+            </li>
+          </ul>
+          
+        </div>
+        </section>
+      
+
+      <!--Наша команда-->
+
+      
+        <section class="section section-team">
+          <div class="container">
+          <h2 class="team-title">Our Team</h2>
+          <ul class="team-list list">
+            <li class="team-item">
+                <img src="./images/contact1.jpg" alt="Face Mark Guerrero" width="264" class="img-team" />
+                <div class="team-card-content">
+                  <h3 class="section-subject">Mark Guerrero</h3>
+                  <p class="section-text">Product Designer</p>
+                </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/contact2.jpg"
+                alt="Fece Tom Ford"
+                width="264" class="img-team"
+              />
+              <div class="team-card-content">
+                <h3 class="section-subject">Tom Ford</h3>
+                <p class="section-text">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/contact3.jpg"
+                alt="Face Camila Garcia"
+                width="264" class="img-team"
+              />
+              <div class="team-card-content">
+                <h3 class="section-subject">Camila Garcia</h3>
+                <p class="section-text">Marketing</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/contact4.jpg"
+                alt="Face Daniel Wilson"
+                width="264" class="img-team"
+              />
+              <div class="team-card-content">
+                <h3 class="section-subject">Daniel Wilson</h3>
+                <p class="section-text">UI Designer</p>
+                
+              </div>
+            </li>
+          </ul>
+          </div>
+        </section>
+      
+    </main>
+    <!--Подвал сайта-->
+    <footer class="footer">
+      
+        <div class="container">
+          <a href="./index.html" class="logo-footer link">Web<span class="footer-logo-span">Studio</span>
+          </a>
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+      
+    </footer>
+  </body>
+</html>

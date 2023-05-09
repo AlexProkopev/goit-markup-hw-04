@@ -1,0 +1,569 @@
+/* Цвет основного текста #2E2F42 */
+
+/* Вторичный цвет текста,абзацев #434455; */
+
+/* Цвет заголовка героя #FFFFFF */
+
+/* Цвет кнопки #4D5AE5 , Цвет ховера #404BBF */
+
+/* Цвет акцента #E7E9FC */
+
+/* Цвет героя и футтера #2E2F42 */
+
+/* Цвет фона #E5E5E5 */
+
+/* Цвет фона вторичный #F4F4FD */
+
+/* Размеры основного текста : 16рх
+line-height: 1.5 множитель*/
+
+/* Размеры вторичных заголовков : 20рх
+line-height: 1.2 множитель */
+
+/* Переменные */
+
+
+
+/* Общий сброс дефолта */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Глобальные стили */
+
+body {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+/* Переменные  */
+
+:root {
+  --primary-text-color: #2e2f42;
+  --title-paragrav-color: #434455;
+  --acsent-color: #404bbf;
+  --button-color: #4d5ae5;
+  --button-portvolio-color: #f4f4fd;
+}
+
+/* Контейнер */
+
+.container {
+  width: 1158px;
+
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*--------------- Общие стили для секций и заголовков -----------------*/
+
+.section {
+  padding: 120px 0;
+}
+
+.section.section-padding {
+  padding-top: 0;
+}
+
+.section .section-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/*--------- СТИЛИ ДЛЯ ШАПКИ -------------*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .header-container {
+  display: flex;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+/*------------- Логотип в шапке -------------*/
+
+.logo {
+  color: var(--button-color);
+  font-size: 18px;
+  line-height: 1.17;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  margin-right: 76px;
+}
+.logo-text {
+  color: var(--primary-text-color);
+}
+
+/*----------------- Навигация по сайту -----------------*/
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links .nav-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  padding: 24px 0;
+}
+
+.nav-links .nav-item {
+  margin-right: 40px;
+}
+
+.nav-links .nav-item:last-child {
+  margin-right: 0px;
+}
+
+/* ---------- Контакты -------------------------- */
+.contact {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.header .contact-list {
+  display: flex;
+  padding: 24px 0;
+  margin-right: auto;
+}
+
+.contact-list .contact-item {
+  margin-right: 40px;
+}
+
+.contact-list .contact-item:last-child {
+  margin-right: 0;
+}
+
+.contact-list .contact-link {
+  color: var(--title-paragrav-color);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+
+/*------------------ Навигация по сайту + контактная информация в ховере --------------*/
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link:focus,
+
+
+.addres-list .address-link:hover,
+.addres-list .address-link:focus,
+
+
+.contact-list .contact-link:hover,
+.contact-list .contact-link:focus {
+  color: var(--acsent-color);
+}
+
+/* ------------------------ Навигация по сайту + контактная информация в активе --------------*/
+
+.nav-links .nav-link:active,
+
+.addres-list .address-link:active,
+
+.contact-list .contact-link:active {
+  color: #4d5ae5;
+}
+
+
+
+
+/* ------------------------ ПЕРВАЯ СЕКЦИЯ - ГЕРОЙ ------------------------*/
+
+.hero {
+  padding: 188px 0;
+
+  background-color: #2e2f42;
+}
+
+.hero .hero-title {
+  display: block;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  max-width: 496px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.hero .hero-button {
+  display: block;
+  text-align: center;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #ffffff;
+  background-color: var(--button-color);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  border: none;
+
+  min-width: 169px;
+  height: 56px;
+  gap: 10px;
+}
+
+
+/* --------------- Кнопка героя в ховере ---------------------- */
+.hero .hero-button:hover,
+.hero .hero-button:focus {
+  background-color: #404bbf;
+}
+
+/*------------------------- ВТОРАЯ СЕКЦИЯ - ОСОБЕННОСТИ  -----------------*/
+
+.features-list {
+  display: flex;
+ 
+}
+
+
+.features-list .features-item {
+  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
+}
+
+.features-list .features-item:last-child {
+  margin-right: 0px;
+}
+
+
+.features-title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.features-text-item {
+  width: 264px;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-paragrav-color);
+}
+
+/*------------------- ТРЕТЬЯ СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ------------------- */
+
+.meny-list {
+  display: flex;
+}
+
+
+.meny-list .meny-item {
+  margin-right: 24px;
+}
+.meny-list .meny-item:last-child {
+  margin-right: 0;
+}
+
+
+.section .section-caption {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+
+  margin-bottom: 72px;
+}
+
+
+
+
+
+
+
+/* ЧЕТВЕРТАЯ СЕКЦИЯ - КОМАНДА*/
+
+.section-team {
+  background-color: #f4f4fd;
+
+}
+
+.team-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 72px;
+}
+
+.team-card-content {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.team-list .team-item {
+  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
+}
+
+.team-list .team-item:last-child {
+  margin-right: 0px;
+}
+
+.team-list .team-item:first-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-paragrav-color);
+  text-align: center;
+  
+}
+
+
+.section-team .section-subject {
+  color: var(--primary-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  margin-bottom: 8px;
+}
+
+.section-team .team-item {
+  background-color: #ffffff;
+}
+
+/* -----------------ФУТЕР-------------------*/
+
+.footer {
+  background-color: var(--primary-text-color);
+  color: #ffffff;
+
+  padding: 100px 0;
+}
+
+/* --------------------------Логотип В футтере -------------------------- */
+
+.footer .logo-footer {
+  display: inline-block;
+  color: var(--button-color);
+  font-size: 18px;
+  line-height: 1.17;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
+
+.footer .footer-logo-span {
+  color: #f4f4fd;
+}
+
+.footer .footer-text {
+  max-width: 264px;
+}
+
+
+
+
+
+/* -----------------------СТРАНИЦА ПОРТФОЛИО---------------------- */
+
+
+/* -------------------СТИЛИ ДЛЯ КНОПОК ПЕРВАЯ СЕКЦИЯ -------------------*/
+
+.section-galery .meny-button {
+  display: block;
+
+  background-color: var(--button-portvolio-color);
+  color: var(--button-color);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
+
+
+
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 12px 24px;
+}
+
+/* --------------------Ховер кнопок --------------------- */
+
+.section-galery .meny-button:hover,
+.section-galery .meny-button:focus {
+  background-color: var(--acsent-color);
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+
+/* -------------------- ГАЛЕРЕЯ КАРТОЧКИ --------------- */
+
+.section-galery {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.section-galery .galery-title {
+  color: var(--primary-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+}
+
+.section-galery .galerry-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px
+}
+
+.galerry-item {
+  margin-right: 24px;
+
+}
+
+.galerry-btn-list .galerry-item:last-child {
+  margin-right: 0;
+}
+
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.galery-list .galerry-item-card {
+  margin-right: 24px;
+
+}
+
+.galery-list .galerry-card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: 1px solid #E7E9FC;
+  border-top: none;
+}
+
+.galery-list .galerry-item-card:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+
+.galery-paragrav {
+  color: var(--title-paragrav-color);
+  line-height: 1.5;
+}
+
