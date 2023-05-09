@@ -228,9 +228,17 @@ body {
 /* ------------------------ ПЕРВАЯ СЕКЦИЯ - ГЕРОЙ ------------------------*/
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 0;
+  width: 1440px;
 
   background-color: #2e2f42;
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ) , url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  
 }
 
 .hero .hero-title {
@@ -300,6 +308,41 @@ body {
 
 .features-list .features-item:last-child {
   margin-right: 0px;
+}
+
+.features-list .features-item::before {
+  display: block;
+  content: '';
+  height: 112px;
+  background-color: var(--button-portvolio-color);
+  border-radius: 4px;
+
+  margin-bottom: 8px;
+  
+}
+
+.icon-anten:before {
+  background-image: url(../images/features-icon/anten.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-clock:before {
+  background-image: url(../images/features-icon/clock.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-diagram:before {
+  background-image: url(../images/features-icon/diagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-astronaut:before {
+  background-image: url(../images/features-icon/astronaut.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -429,6 +472,61 @@ body {
 .section-team .team-item {
   background-color: #ffffff;
 }
+
+/* ------------Иконки Соц Сетей ---------------------- */
+
+.list-social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 24px;
+}
+
+.link-social-media {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+    justify-content: center;
+
+  background-color: var(--button-color);
+  border-radius: 50%;
+  
+}
+
+ .icon-social-media-instagram {
+   width: 16px;
+   
+ }
+
+
+
+ .icon-social-media-twitter {
+ width: 16px;
+ height: 13px;
+ }
+
+ .icon-social-media-facebook {
+  
+  height: 16px;
+
+ }
+
+ .icon-social-media-linkedin {
+  width: 16px;
+  height: 16px;
+ }
+
+
+
+
+
+
+
+
+
+
+
 
 /* -----------------ФУТЕР-------------------*/
 
