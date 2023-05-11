@@ -550,6 +550,10 @@ body {
   border-radius: 50%;
 }
 
+.icon {
+  fill: currentColor;
+}
+
 /* -----------------ФУТЕР-------------------*/
 
 .footer {
