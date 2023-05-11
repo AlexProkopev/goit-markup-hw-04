@@ -513,6 +513,7 @@ body {
 .link-costumers:hover,
 .link-costumers:focus {
   border: 1px solid var(--acsent-color);
+  color:#404bbf;
 }
 
 .link-costumers:active {
@@ -521,7 +522,7 @@ body {
 
 .link-costumers:hover .icon-costumers,
 .link-costumers:focus .icon-costumers {
-  fill: var(--acsent-color);
+  fill: currentColor
 }
 
 
