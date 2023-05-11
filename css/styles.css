@@ -85,6 +85,7 @@ body {
   --button-color: #4d5ae5;
   --button-portvolio-color: #f4f4fd;
   --color-icon: #f4f4fd;
+  --color-icon-costumers:#8e8f99;
 }
 
 /* Контейнер */
@@ -118,6 +119,7 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .header-container {
@@ -231,6 +233,8 @@ body {
     url(../images/hero-image.jpg);
 
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero .hero-title {
@@ -391,7 +395,7 @@ body {
   margin-bottom: 72px;
 }
 
-/* ЧЕТВЕРТАЯ СЕКЦИЯ - КОМАНДА*/
+/*---------------------- ЧЕТВЕРТАЯ СЕКЦИЯ - КОМАНДА--------------------*/
 
 .section-team {
   background-color: #f4f4fd;
@@ -419,8 +423,7 @@ body {
 .team-card-content {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  
 }
 
 .team-list .team-item {
@@ -459,7 +462,8 @@ body {
   background-color: #ffffff;
 }
 
-.team-icon-hover:hover {
+.team-icon-hover:hover,
+.team-icon-hover:focus {
   background-color: #404BBF;
 }
 
@@ -471,10 +475,12 @@ body {
 }
 
 .section-costumers .title-costumers {
+  margin-bottom: 72px;
+  color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -484,7 +490,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 72px;
+  
 }
 
 .link-costumers {
@@ -497,7 +503,11 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-  fill: #8e8f99;
+  color:  var(--color-icon-costumers);
+}
+
+.icon-costumers {
+  fill: currentColor;
 }
 
 .link-costumers:hover,
@@ -505,10 +515,16 @@ body {
   border: 1px solid var(--acsent-color);
 }
 
-.link-costumers:hover,
-.link-costumers:focus > .icon-costumers {
+.link-costumers:active {
+  background-color: #404bbf;;
+}
+
+.link-costumers:hover .icon-costumers,
+.link-costumers:focus .icon-costumers {
   fill: var(--acsent-color);
 }
+
+
 
 /* ------------Иконки Соц Сетей ---------------------- */
 
@@ -588,7 +604,8 @@ body {
   margin-bottom: 16px;
 }
 
-.item-footer-social:hover .footer-social-link {
+.footer-social-link:hover,
+.footer-social-link:focus  {
   background-color: #31D0AA;
 }
 
