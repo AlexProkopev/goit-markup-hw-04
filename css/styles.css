@@ -84,6 +84,7 @@ body {
   --acsent-color: #404bbf;
   --button-color: #4d5ae5;
   --button-portvolio-color: #f4f4fd;
+  --color-icon: #f4f4fd;
 }
 
 /* Контейнер */
@@ -298,7 +299,20 @@ body {
   margin-right: 0px;
 }
 
-.features-list .features-item::before {
+.container-features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 8px;
+  height: 112px;
+  background-color: var(--color-icon); 
+  border-radius: 4px;
+
+
+}
+
+/* .features-list .features-item::before {
   display: block;
   content: '';
   height: 112px;
@@ -330,7 +344,7 @@ body {
   background-image: url(../images/features-icon/astronaut.svg);
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .features-title {
   font-size: 20px;
@@ -445,6 +459,10 @@ body {
   background-color: #ffffff;
 }
 
+.team-icon-hover:hover {
+  background-color: #404BBF;
+}
+
 /* -------------- КЛИЕНТЫ СЕКЦИЯ ПЯТАЯ-------------------------*/
 
 .section-costumers {
@@ -494,6 +512,8 @@ body {
 
 /* ------------Иконки Соц Сетей ---------------------- */
 
+
+
 .list-social-media {
   display: flex;
   justify-content: center;
@@ -502,6 +522,7 @@ body {
 }
 
 .link-social-media {
+  fill: var(--color-icon);
   display: flex;
   height: 40px;
   width: 40px;
@@ -525,7 +546,9 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   gap: 120px;
+  
 }
 
 .footer .logo-footer {
@@ -552,7 +575,7 @@ body {
 .footer .footer-list {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  
 }
 
 .footer .footer-social-media-text {
@@ -562,6 +585,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.item-footer-social:hover .footer-social-link {
+  background-color: #31D0AA;
 }
 
 /* -----------------------СТРАНИЦА ПОРТФОЛИО---------------------- */
@@ -641,16 +669,16 @@ body {
   max-height: 420px;
 }
 
-.galery-link:hover > .galerry-card-content {
-  border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.galery-link {
+  display: block;
 }
-.galery-link:focus > .galerry-card-content {
-  border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+.galery-link:hover,
+.galery-link:focus {
+  
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 
 .galery-list .galerry-card-content {
   padding-top: 32px;
