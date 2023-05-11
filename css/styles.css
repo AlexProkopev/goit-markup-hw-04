@@ -568,9 +568,14 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  
   
 }
+
+.footer-container-text {
+  margin-right: 120px;
+}
+
 
 .footer .logo-footer {
   display: inline-block;
@@ -583,6 +588,7 @@ body {
   text-transform: uppercase;
 
   margin-bottom: 16px;
+  
 }
 
 .footer .footer-logo-span {
