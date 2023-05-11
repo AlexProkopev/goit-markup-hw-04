@@ -539,7 +539,7 @@ body {
 }
 
 .link-social-media {
-  fill: var(--color-icon);
+  color: var(--color-icon);
   display: flex;
   height: 40px;
   width: 40px;
